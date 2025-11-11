@@ -274,7 +274,7 @@ class Program
         
 
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 1000000; i++)
         {
             Sex sex = random.Next(0, 2) == 0 ? Sex.Male : Sex.Female;
             string name = GenerateName( sex);
@@ -282,7 +282,7 @@ class Program
             yield return new Employee(name, sex, birth);
 
         }
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 100; i++)
         {
             Sex sex = Sex.Male;
             string name = "F" + GenerateName( sex);
